@@ -1,0 +1,128 @@
+.moduletable_cerca_video
+{
+	
+	height: 30px;
+}		 
+
+    
+    .cf:before, .cf:after{
+      content:"";
+      display:table;
+    }
+    
+    .cf:after{
+      clear:both;
+    }
+
+    .cf{
+      zoom:1;
+    }
+
+    /*-------------------------------------*/	
+    
+    .form-wrapper {
+        width: 35%;
+        height: 30px;
+        border-radius: 10px;
+        margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+    }
+    
+    .form-wrapper input[type="search"] {
+        font-variant: small-caps;
+        width: 80%;
+		padding: 0px 10px 0px 10px;
+		float: left;
+		border: 0;
+		background: white;
+		border-radius: 2px 0 0 2px;
+		height: 30px;
+	    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;      
+    }
+    
+    .form-wrapper input[type="search"]:focus {
+        outline: 0;
+        background: #fff;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+    
+    .form-wrapper input[type="search"]::-webkit-input-placeholder {
+       color: #999;
+
+    }
+    
+    .form-wrapper input[type="search"]:-moz-placeholder {
+        color: #999;
+
+    }
+    
+    .form-wrapper input[type="search"]:-ms-input-placeholder {
+        color: #999;
+
+    }    
+    
+    .form-wrapper button {
+		overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 30px;
+        width: 20%;
+        
+        color: #fff;
+        text-transform: uppercase;
+        background: rgb(32, 162, 68);
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+      
+    .form-wrapper button:hover{		
+        background: rgb(29, 145, 61);
+    }	
+      
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: rgb(29, 145, 61);    
+    }
+    
+    .form-wrapper button:before {
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent rgb(32, 162, 68) transparent;
+        top: 8px;
+        left: -6px;
+    }
+    
+    .form-wrapper button:hover:before{
+        border-right-color: rgb(29, 145, 61);
+    }
+    
+    .form-wrapper button:focus:before{
+        border-right-color: rgb(29, 145, 61);
+    }    
+    
+    .form-wrapper button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+      @media (max-width: 711px) {
+		 .form-wrapper {
+		        width: 70%;
+		        border-radius: 10px;
+		        margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+		    }
+
+	 }

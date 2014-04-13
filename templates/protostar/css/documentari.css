@@ -1,0 +1,21 @@
+body
+{
+	font-family: 'Spinnaker' !important;
+
+}
+header
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ height: 40px;
+ width: 100%;
+/*)box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .55);*/
+ z-index: 10;
+background: rgb(240, 240, 240);
+border-bottom: 1px solid rgb(225, 225, 225);
+}
+div.body
+{
+	margin-top: 40px;
+}

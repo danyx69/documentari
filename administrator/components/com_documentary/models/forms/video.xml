@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		
+		<field name="id" type="text" default="0" label="COM_DOCUMENTARY_FORM_LBL_VIDEO_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_DOCUMENTARY_FORM_LBL_VIDEO_CREATED_BY"
+            description="COM_DOCUMENTARY_FORM_DESC_VIDEO_CREATED_BY"  /> 
+
+       <field name="created_date" type="timecreated" default="" 
+            label="COM_DOCUMENTARY_FORM_LBL_VIDEO_CREATED_DATE"
+            description="COM_DOCUMENTARY_FORM_DESC_VIDEO_CREATED_DATE"  hidden="true" /> 
+
+       <field name="iframe" type="textarea"
+            rows="5"
+            label="COM_DOCUMENTARY_FORM_LBL_VIDEO_URL"
+            description="COM_DOCUMENTARY_FORM_DESC_VIDEO_URL" 
+            required="true" 
+            filter="RAW"
+/> 
+
+       <field 
+           	name="title"
+       		type="text"
+            label="COM_DOCUMENTARY_FORM_LBL_VIDEO_TITLE"
+            description="COM_DOCUMENTARY_FORM_DESC_VIDEO_TITLE" 
+            required="true" 
+            filter="string" 
+		/> 
+            
+       <field name="image" type="text" size="40" class="inputbox"
+            label="COM_DOCUMENTARY_FORM_LBL_VIDEO_IMAGE"
+            description="COM_DOCUMENTARY_FORM_DESC_VIDEO_IMAGE" 
+ 			filter="safehtml" />
+       
+       <field 
+           	name="catid"
+       		type="category"
+       		extension="com_documentary"
+            label="COM_DOCUMENTARY_FORM_LBL_CATEGORY_TITLE"
+            description="COM_DOCUMENTARY_FORM_DESC_CATEGORY_TITLE" 
+            required="true" 
+		/> 
+
+	</fieldset>
+
+</form>

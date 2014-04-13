@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+ type="module"
+ version="3.1"
+ client="site"
+ method="upgrade">
+  <name>Modulo menù categorie</name> 
+  <author>Simone Bestazza</author> 
+  <creationDate>June 2013</creationDate> 
+  <version>1.0.0</version> 
+  <description>Visualizza tutte le categorie crowdfunding in un menù.</description> 
+  <files> 
+    <filename module="mod_menuCategorie">mod_menuCategorie.php</filename>
+    <filename module="mod_menuCategorie">mod_menuCategorie.xml</filename>
+    <filename module="mod_menuCategorie">mod_menuCategorie.css</filename>
+    <filename module="mod_menuCategorie">mod_menuCategorie.js</filename>
+  </files> 
+  <config>
+		<fields name="params">
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					default="_:default"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="owncache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

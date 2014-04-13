@@ -1,0 +1,103 @@
+
+.moduletable_categorie
+{	
+    background-color:white;
+	padding: 0px;
+	width: 25%;
+	float: left;	
+	margin-top: 5px;
+	margin-left: 10px;
+	border: 1px solid #ddd;
+	border-radius:4px;
+	cursor: pointer;
+}
+.moduletable_categorie h3
+{
+margin-top: 0px;
+color: rgb(32, 162, 68);
+font-variant: small-caps;
+font-family: 'Spinnaker', sans-serif;
+}
+#menu_cate
+{
+padding: 0px;
+margin: 0px;
+
+}
+.moduletable_categorie h3
+{
+font-size: 2vw;
+padding: 0px;
+margin: 0px;
+}
+
+#menu_cate li
+{
+list-style-type: none;
+font-family: 'Spinnaker', sans-serif;
+font-variant: small-caps;
+text-decoration: none;
+margin-top: 3%;
+}
+#menu_cate span
+{
+
+	color: rgb(32, 162, 68);
+	display: block;
+	float: left;
+	width: 65%;
+	height: 100%;
+	font-size: 1vw;
+	line-height: 1.7vw;
+}
+
+#menu_cate li a
+{
+	padding: 0px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid rgb(189, 189, 189);
+}
+#menu_cate li a:hover
+{
+text-shadow: 0px 0px 15px black;
+}
+
+#menu_cate img
+{
+	width: 25%;
+	height: 100%;
+	margin-right: 3%;
+	border-radius: 5%;
+	float: left;
+	clear: both;
+}
+#button_categoria
+{
+
+height: 30px;
+width: 30px;
+border-radius: 3px;
+background-position: -336px -424px;
+background-image: url(../../media/jui/img/glyphicons-halflings-big.png);
+float: left;
+}
+#text_categoria
+{
+	line-height: 26px;
+	margin-left: 40px;
+	font-variant: small-caps;
+	height: 30px;
+}
+@media (max-width: 711px) {
+  .moduletable_categorie
+  {
+  width: 30px;  
+  }
+  #text_categoria
+  {
+  display: none;
+  }
+}
