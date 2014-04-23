@@ -14,7 +14,7 @@ $search = JFactory::getApplication()->input->getString('cerca', '');
 						    
 	<input id="cerca_video" type="search" placeholder="Cerca un video" results="10" name="cerca" value="<?php echo $search;?>" >
 	<input type="hidden" name="limitstart" value="0" />
-	<button id="cerca_video2" type="submit">Cerca</button>
+	<button id="cerca_video2" type="submit"><span class="icon-search"></span></button>
 </form> 
 
 

@@ -1,15 +1,39 @@
 
 .moduletable_categorie
 {	
-    background-color:white;
+    
 	padding: 0px;
-	width: 25%;
 	float: left;	
-	margin-top: 5px;
+	margin-top: 4px;
 	margin-left: 10px;
-	border: 1px solid #ddd;
-	border-radius:4px;
-	cursor: pointer;
+	
+	
+}
+#button_categoria
+{
+height: 32px;
+width: 32px;
+float: left;
+cursor: pointer;
+font-size: 32px;
+border: 0px solid #ddd;
+color: rgba(100, 100, 100, 1);
+}
+
+
+.button_categoria_hover
+{
+
+text-shadow: 0px 0px 10px rgb(32, 162, 68);
+
+	
+}
+.button_categoria_click
+{
+text-shadow: 0px 0px 0px rgb(32, 162, 68);
+
+	
+color: rgb(32, 162, 68)!important;
 }
 .moduletable_categorie h3
 {
@@ -18,27 +42,39 @@ color: rgb(32, 162, 68);
 font-variant: small-caps;
 font-family: 'Spinnaker', sans-serif;
 }
+
+
+
 #menu_cate
 {
 padding: 0px;
 margin: 0px;
+position: fixed;
+width: 25%;
+height: 100%;
+background-color: rgba(255, 255, 255, 1);
+top: 41px;
+left: 0px;
+z-index: 10;
+background: rgb(240, 240, 240);
+border-bottom: 1px solid rgb(225, 225, 225);
+display: none;
+box-shadow: -25px 25px 20px -25px rgba(0, 0, 0, 0.5) inset;
 
 }
-.moduletable_categorie h3
+
+/*.moduletable_categorie h3
 {
 font-size: 2vw;
 padding: 0px;
 margin: 0px;
 }
-
+*/
 #menu_cate li
 {
-list-style-type: none;
-font-family: 'Spinnaker', sans-serif;
-font-variant: small-caps;
-text-decoration: none;
-margin-top: 3%;
+padding-left: 10px;
 }
+/*
 #menu_cate span
 {
 
@@ -74,30 +110,26 @@ text-shadow: 0px 0px 15px black;
 	float: left;
 	clear: both;
 }
-#button_categoria
-{
 
-height: 30px;
-width: 30px;
-border-radius: 3px;
-background-position: -336px -424px;
-background-image: url(../../media/jui/img/glyphicons-halflings-big.png);
-float: left;
-}
 #text_categoria
 {
 	line-height: 26px;
 	margin-left: 40px;
 	font-variant: small-caps;
 	height: 30px;
-}
-@media (max-width: 711px) {
+}*/
+@media (max-width: 1024px) {
   .moduletable_categorie
   {
-  width: 30px;  
+    
   }
-  #text_categoria
+  #menu_cate
+		{
+		width: 90%;
+		
+		}
+  .form-wrapper button
   {
-  display: none;
+  font-size: 12px;
   }
 }

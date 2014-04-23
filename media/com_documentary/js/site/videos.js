@@ -8,7 +8,7 @@ jQuery.fn.extend({
 		 var w2=jQuery('#videos .video_container').outerWidth();
 	
 
-		 
+		 console.log(2);
 		 
 		 var mar=(w*0.4)/100;
 
@@ -197,6 +197,7 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(jQuery.fn.setAutoHeight);
 jQuery(window).resize(jQuery.fn.setAutoHeight);
+
 
 
 

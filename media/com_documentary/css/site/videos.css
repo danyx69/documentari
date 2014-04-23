@@ -51,7 +51,15 @@
 	
 }
 
-
+#ombra_lato
+{
+	
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    right: 0px;
+    z-index: 100;
+}
 
 .videos_bot{
 	position: relative;
@@ -248,7 +256,7 @@ background-position: -47px -23px;
 }
 .play
 {
-background-image: url(../../../../media/jui/img/glyphicons-halflings-big.png);
+background-image: url(../../../../media/jui/img/glyphicons-halflings-big-grey.png);
 top: 50%;
 left: 50%;
 height: 40px;

@@ -31,9 +31,14 @@ $doc->addStyleSheet(JUri::base() . 'templates/' . $this->template . '/css/docume
 	
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			
-		
+	
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />		
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
 		
 	<jdoc:include type="head" />
 	
@@ -51,7 +56,7 @@ $doc->addStyleSheet(JUri::base() . 'templates/' . $this->template . '/css/docume
 			</header>
 					
 					
-			
+			<div id="ombra_lato"> </div>
 			<div class="row-fluid">
 
 				<main id="content" role="main">
@@ -69,5 +74,6 @@ $doc->addStyleSheet(JUri::base() . 'templates/' . $this->template . '/css/docume
 		
 	</footer>
 	<jdoc:include type="modules" name="debug" style="none" />
+
 </body>
 </html>

@@ -27,15 +27,15 @@ $categories = $db->loadObjectList();
 
 	
 	
-			 <div id="button_categoria"></div>
-			 <h3 id="text_categoria">sfoglia categorie</h3> 
+	<div id="button_categoria" class="icon-category"></div>
+			  
 	
 	<ul id="menu_cate" class="nav">
 	<?php foreach($categories as $item) { 
 		$catparams = json_decode($item->params);
 		echo '<li>';
 		echo '<a href="'.JURI::root().'index.php?option=com_documentary&view=videos&catid='.$item->id.'">';
-		echo '<img  src="'.$catparams->image.'"></img>';
+		//echo '<img  src="'.$catparams->image.'"></img>';
 		echo '<span>'.$item->title.'</span>';
 		echo '</a>';
 		echo '</li>';
