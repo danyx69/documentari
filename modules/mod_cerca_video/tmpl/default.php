@@ -12,7 +12,7 @@ $search = JFactory::getApplication()->input->getString('cerca', '');
 	<input type="hidden" name="view" value="videos" />
 	<input type="hidden" name="catid" value="0" />
 						    
-	<input id="cerca_video" type="search" placeholder="Cerca un video" results="10" name="cerca" value="<?php echo $search;?>" >
+	<input id="cerca_video" type="text" placeholder="Cerca un video" results="10" name="cerca" value="<?php echo $search;?>" >
 	<input type="hidden" name="limitstart" value="0" />
 	<button id="cerca_video2" type="submit"><span class="icon-search"></span></button>
 </form> 

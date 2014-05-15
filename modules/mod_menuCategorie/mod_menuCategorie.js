@@ -2,20 +2,17 @@
 
 jQuery(document).ready(function() {
 
-//var cat=jQuery('#menu_cate img').width();
-//jQuery('#menu_cate li').height(cat*9/16);
-//
-//$('#menu_cate').hide();
 
 
-$("#button_categoria" ).click(function() {
-	if(!$('#button_categoria').hasClass('button_categoria_click'))
+$(".icon-category" ).click(function(event) {
+	event.preventDefault();
+	if(!$('.icon-category').hasClass('button_categoria_click'))
 	{
 		$('#menu_cate').stop().animate({width: 'toggle'},'fast');
 		$('#content').css({position: 'relative'});
-		$('#content').stop().animate({left: '26%'},'fast');
-		//$("#videos").width('75%');
-		$('#ombra_lato' ).css({ 'box-shadow' : '-25px 0px 15px -20px rgba(0, 0, 0, 0.5) inset' }, "fast");
+		$('#content').stop().animate({left: '21%'},'fast');
+		
+		$('#ombra_lato').css({ 'box-shadow' : '-25px 0px 15px -20px rgba(0, 0, 0, 0.5) inset' }, "fast");
 		$("#ombra_lato").width('10%');
 	}
 	else
@@ -31,47 +28,47 @@ $("#button_categoria" ).click(function() {
 		
 	}
 
-	$('#button_categoria').toggleClass( "button_categoria_click" );
-	//jQuery.fn.setAutoHeight();
+	$('.icon-category').toggleClass( "button_categoria_click" );
+
 });
 
-$("#menu_cate").swipe({
-	swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		
-			if($('#button_categoria').hasClass('button_categoria_click'))
-				{
-				$("#button_categoria" ).trigger( "click" );
-				}
-			
-		  }	
-	});
+//$("#menu_cate").swipe({
+//	swipeLeft:function(event, direction, distance, duration, fingerCount) {
+//		
+//			if($('#button_categoria').hasClass('button_categoria_click'))
+//				{
+//				$("#button_categoria" ).trigger( "click" );
+//				}
+//			
+//		  }	
+//	});
 
 $("#ombra_lato").mouseenter(
 		  function() {
-				if($('#button_categoria').hasClass('button_categoria_click'))
+				if($('.button_categoria_click').hasClass('button_categoria_click'))
 				{
-				$("#button_categoria" ).trigger( "click" );
+				$(".button_categoria_click" ).trigger( "click" );
 				}
 
 		  });
 
 
 
-$( "#menu_cate li" ).hover(
+$( "#menu_cate li a" ).hover(
 		  function() {
-		    $( this ).stop().animate({ 'padding-left' : '15px' }, "fast");
+		    $( this ).find('span').stop().animate({ 'padding-left' : '15px' }, "fast");
 		  }, function() {
-		    $( this ).stop().animate({ 'padding-left' : '10px' }, "fast");
+		    $( this ).find('span').stop().animate({ 'padding-left' : '10px' }, "fast");
 		  }
 		);
 
 
-$( "header" ).hover(
+$( "#headertop" ).hover(
 		  function() {
 
 		    $('#button_categoria').toggleClass("button_categoria_hover");
 		  }, function() {
-			  console.log(1);
+			
 			  $('#button_categoria').toggleClass("button_categoria_hover");
 		  }
 		);

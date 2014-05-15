@@ -2,7 +2,9 @@ jQuery(document).ready(function() {
 	
 	jQuery('#cerca_video2').click(function(event) {
 		
-		if($('#cerca_video').val()=="")
+		var key = jQuery.trim(jQuery('#cerca_video').val());
+		
+		if(key=="")
 			event.preventDefault();
 		});
 	 

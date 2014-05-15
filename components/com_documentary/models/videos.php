@@ -112,6 +112,7 @@ class DocumentaryModelVideos extends JModelList {
         }
         
         $query->order('d.created_date DESC');
+       // echo($query);
         return $query;
     }
 

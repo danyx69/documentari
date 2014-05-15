@@ -1,3 +1,60 @@
+@media (min-width: 1200px) and (max-width: 1550px) {
+  #videos .video_container{
+     
+    width:24.5% ;    
+    margin: 0.2% 0.2%;
+  }
+
+}
+
+@media (min-width: 712px) and (max-width: 1199px) {
+  #videos .video_container{
+    width:49.4% ;
+  }
+		  #logo
+		  {
+		  display: none;
+		  }
+		  
+		  	 .moduletable_menu_principale 
+			 [class^="icon-"]:before, 
+			 [class*=" icon-"]:before 
+			 {
+			 margin-left: 30px !important;
+			 }
+
+}
+@media (max-width: 711px) {
+  #videos .video_container{
+   width:99.4% ;
+   margin: 1.2% 0.2%;
+  }
+		  #logo
+		  {
+		  display: none;
+		  }
+		  .moduletable_menu_principale ul li a {
+			font-size: 0px;
+			width: 60px;
+			height: 25px;
+			
+		  }
+		   .moduletable_menu_principale ul li a:before {
+			font-size: 25px;
+			line-height: 30px;
+			
+		  }
+			.moduletable_menu_principale 
+			 [class^="icon-"]:before, [class*=" icon-"]:before {
+			margin-left: 20px !important;
+			}
+}
+
+
+
+
+
+
 .pagination {
 			margin: 10px 0;
 			width: 100%;
@@ -186,6 +243,15 @@ a.disabled:hover {
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face{ 
+	font-family: 'machauer';
+ 	src: url('../../../media/jui/fonts/machauer.eot'); 
+ 	src: url('../../../media/jui/fonts/machauer.eot?#iefix') format('embedded-opentype'),
+	     url('../../../media/jui/fonts/machauer.woff') format('woff'),
+	     url('../../../media/jui/fonts/machauer.ttf') format('truetype'),
+	     url('../../../media/jui/fonts/machauer.svg#webfont') format('svg');
+ }
 [data-icon]:before {
 	font-family: 'IcoMoon';
 	content: attr(data-icon);
@@ -224,12 +290,16 @@ a.disabled:hover {
 	
 }
 .icon-category:before {
-	content: "\e757";
-	
+	content: "\e757";	
 }
 .icon-search:before {
 	content: "\e67f";
 }
+
+.icon-home:before {
+	content: "\e606";	
+}
+
 
 .pagination-list li a 
 {

@@ -16,28 +16,7 @@
 	overflow: hidden;
 	background: rgb(240, 240, 240);
 }
-@media (min-width: 1200px) and (max-width: 1550px) {
-  #videos .video_container{
-    
-    
-    width:24.5% ;
-    
-    margin: 0.2% 0.2%;
-  }
-}
 
-@media (min-width: 712px) and (max-width: 1199px) {
-  #videos .video_container{
-    width:49.4% ;
-  }
-}
-@media (max-width: 711px) {
-  #videos .video_container{
-   width:99.4% ;
-   margin: 1.2% 0.2%;
-  }
-
-}
 
 #videos .video{
 	display: block;
@@ -51,15 +30,7 @@
 	
 }
 
-#ombra_lato
-{
-	
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    right: 0px;
-    z-index: 100;
-}
+
 
 .videos_bot{
 	position: relative;

@@ -6,24 +6,16 @@ jQuery.fn.extend({
 		
 		 var w=jQuery('#videos').width();
 		 var w2=jQuery('#videos .video_container').outerWidth();
-	
-
-		 console.log(2);
-		 
 		 var mar=(w*0.4)/100;
 
 		 
 		 jQuery('.video_container').height((w2-mar-1)*9/16);
 		 
 		 var ht=jQuery('.video_container').find('.video_title').height();
-		// console.log(ht+'titolo_prima');
+
 		 jQuery('.video_container').find('.front').find('.video_title').css('font-size',ht-1+'px');
 		 
-		 
-		 
-		 //jQuery('.video_container').find('.back').find('.video_description').find('.video_title').css('font-size',ht-1+'px');
-		 //jQuery('.video_container').find('.video_description').css('font-size',ht+'px');		
-		 //jQuery.fn.setHeight;
+
 	}
 
 });
@@ -68,13 +60,6 @@ var BrowserDetect =
 
 };
 BrowserDetect.init();
-
-
-
-
-
-
-
 
 
 
@@ -143,17 +128,12 @@ jQuery(document).ready(function() {
 			  		  
 				  }, function() {
 
-//					  if(!jQuery( this ).find(".video").hasClass('flipped') && !jQuery( this ).find(".video").find(".back").hasClass('flipped_ie'))
-//						  {
-//						 
-//						  }
+
 						  jQuery( this ).find(".info").hide();
 					  	  jQuery( this ).find(".flip_n").stop(1,0).animate({width: '11px'});
 					  	  jQuery( this ).find(".front .video_title").css('text-shadow','0px 0px 0px');
 	    				  
 					  	  jQuery( this ).find(".link_mini").css('text-shadow','0px 0px 0px');
-					  	  
-					  	  //jQuery( this ).find(".flip_n").show();
 					  	  
 					  	  jQuery( this ).find(".flip_n").trigger("flipdiv");
 					  	
@@ -163,37 +143,6 @@ jQuery(document).ready(function() {
 	});
 
 
-
-
-
-jQuery(document).ready(function() {
-	
-	jQuery(window).scroll(function() {
-		 
-		var scroll=jQuery(document).scrollTop();
-		//console.log(scroll);
-			if(scroll>0)
-			{
-			jQuery('header').css('box-shadow','0px 0px '+10+'px 0px');
-			}
-			else
-			{
-			jQuery('header').css('box-shadow','0px 0px 0px 0px');
-			}
-		});
-	 
-	});
-
-//jQuery(document).ready(function() {
-//	
-//
-// 	  jQuery( ".tutto" ).click(function() {
-// 		
-// 		 jQuery( ".flip_n" ).trigger( "flipdiv" );	
-// 		
-// 	  });
-//	 
-//	});
 
 jQuery(document).ready(jQuery.fn.setAutoHeight);
 jQuery(window).resize(jQuery.fn.setAutoHeight);

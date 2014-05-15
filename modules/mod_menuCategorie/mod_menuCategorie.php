@@ -27,10 +27,11 @@ $categories = $db->loadObjectList();
 
 	
 	
-	<div id="button_categoria" class="icon-category"></div>
+<!-- 	<div id="button_categoria" class="icon-category"></div> -->
 			  
 	
 	<ul id="menu_cate" class="nav">
+	
 	<?php foreach($categories as $item) { 
 		$catparams = json_decode($item->params);
 		echo '<li>';

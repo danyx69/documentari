@@ -21,6 +21,7 @@ $doc->addStyleSheet(JUri::base() . 'templates/'.$this->template.'/css/template.c
 
 $doc->addStyleSheet(JUri::base() . 'templates/' . $this->template . '/css/documentari.css', $type = 'text/css');
 
+$doc->addScript(JURI::base(). 'templates/' . $this->template . '/js/documentari.js');
 
 ?>
 <!DOCTYPE html>
@@ -49,14 +50,31 @@ $doc->addStyleSheet(JUri::base() . 'templates/' . $this->template . '/css/docume
 	<!-- Body -->
 	<div class="body">
 			<!-- Header -->
-			<header class="header" role="banner">
+			<header>
+				
+			<div  class="header" id="headertop">
+				
+			
+<!-- 				<div id="button_home" class="icon-home"></div> -->
 				<jdoc:include type="modules" name="menu_category" style="xhtml" />
+			
+				<a href="<?php echo JUri::base();?>"><img id="logo" src="./images/logo.png"></img></a>
+
+				
 				<jdoc:include type="modules" name="cerca_video" style="xhtml" />
 				
+				
+			</div>
+			<div  class="header" id="headerbottom">
+			
+			<jdoc:include type="modules" name="menu_principale" style="xhtml" />
+			 
+			</div>			
+		
 			</header>
 					
 					
-			<div id="ombra_lato"> </div>
+			<div id="ombra_lato"></div>
 			<div class="row-fluid">
 
 				<main id="content" role="main">
