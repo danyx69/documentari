@@ -4,12 +4,14 @@ html
 	overflow-x: hidden;
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 body
 {
 	font-family: 'Spinnaker' !important;
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 
 .header
@@ -27,12 +29,14 @@ top: 0px;
 background: rgb(240, 240, 240);
 border-bottom: 1px solid rgb(225, 225, 225);
 background-image: url(https://developer.cdn.mozilla.net/media/redesign/img/header-background.png);
+z-index: 100;
 }
 #headerbottom
 {
 height: 30px;
 top: 40px;
 background: rgb(32, 162, 68);
+z-index: 99;
 }
 div.body
 {
@@ -66,6 +70,8 @@ float: left;
 .moduletable_menu_principale ul li
 {
  display: inline;
+ padding-left: 50px;
+ padding-right: 50px;
 }
 .moduletable_menu_principale ul li a
 {
@@ -75,32 +81,34 @@ float: left;
 }
 .moduletable_menu_principale ul li a:hover
 {
-text-decoration: underline;
+
+color: rgb(200, 200, 200) !important;
 }
 .moduletable_menu_principale ul li a:hover:before
 {
 
 }
 .moduletable_menu_principale ul li.current a {
-color: rgba(100, 100, 100, 1) !important;
+color: rgb(200, 200, 200) !important;
 }
 
 
 
 
 
-.moduletable_menu_principale 
+ .moduletable_menu_principale 
 [class^="icon-"]:before,
+.moduletable_menu_principale 
 [class*=" icon-"]:before {
 	margin-right: 5px;
-	margin-left: 100px;
+	margin-left: 5px;
 }
 .moduletable_menu_principale
 .icon-home:before {
 		
 	margin-left: 10px !important;
 }
-
+ 
 .moduletable_menu_principale
 .icon-chi-siamo:before {
 	content: "\e657";	
@@ -119,6 +127,10 @@ color: rgba(100, 100, 100, 1) !important;
 .moduletable_menu_principale
 .button_categoria_click
 {
-	color:rgba(100, 100, 100, 1) !important;
+	color:rgb(200, 200, 200) !important;
 }
+
+
+
+
 

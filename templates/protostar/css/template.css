@@ -25,10 +25,12 @@
 
 }
 @media (max-width: 711px) {
-  #videos .video_container{
-   width:99.4% ;
-   margin: 1.2% 0.2%;
-  }
+	
+	
+		  #videos .video_container{
+		   width:99.4% ;
+		   margin: 1.2% 0.2%;
+		  }
 		  #logo
 		  {
 		  display: none;

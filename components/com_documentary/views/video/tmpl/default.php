@@ -17,21 +17,55 @@ $lang->load('com_documentary', JPATH_ADMINISTRATOR);
 <?php if ($this->item) : ?>
         
     <div class="item_fields"> 
-		<div class="video_titolo"> TITOLO: <?php echo $this->item->title;?></div>
+		<div class="video_titolo"><strong><?php echo $this->item->title;?></strong></div>
 		<div class="video_video"><?php echo $this->item->iframe; ?> </div>
-		<div class="video_desc"> <?php echo $this->item->description ?></div>
 		
 		
-		<div class="video_tempo">Durata: <?php echo $this->item->tempo; ?></div>
+		<div class="video_info">
+		
+		<span class="video_info_tempo icon-tempo">Durata:<?php echo $this->item->tempo; ?></span>
         
-
-		<div class="video_categoria"> Categoria: <a href="<?php echo JRoute::_('index.php?option=com_documentary&view=videos&catid='.(int)$this->item->catid)?>"> <?php echo $this->item->categoria; ?> </a>   </div>
-	    <div class="video_like"><input type="hidden" value="1" id="input_like" > Like: <?php echo $this->item->vlike; ?></div>
-	    <div class="video_rank">Gradimento:<?php echo $this->item->like_percents; ?>%</div>
-	    <div class="video_dislike"><input type="hidden" value="-1" id="input_like" >Dislike: <?php echo $this->item->vdislike; ?></div>
+        <span class="video_info_view icon-view">Visulizzazioni:2345675</span>
+		
+		<span class="video_info_categoria icon-categoria">Categoria:<a href="<?php echo JRoute::_('index.php?option=com_documentary&view=videos&catid='.(int)$this->item->catid)?>"><?php echo $this->item->categoria; ?></a></span>
+		
+	    <span class="video_info_like icon-like">8222</span>
 	    
-    <div class="video_visto">Gia visto</div>
-    <input type="hidden" value="<?php echo $this->item->id; ?>" id="id_video">
+	    <span class="video_info_raking icon-info_raking">O%</span>
+	    
+	    <span class="video_info_dislike icon-dislike">3323</span>
+ 		</div>
+ 		
+ 		
+ 		<div class="video_action">
+	    <button class="video_like">
+	    <input type="hidden" value="1" class="input_like" >  
+	    <span class="icon-like button-icon-like"></span>
+	    <span class="text-like">Mi piace</span> <?php echo $this->item->vlike; ?>
+	    </button>
+	    
+	    <button class="video_dislike">
+	    <input type="hidden" value="-1" class="input_dislike" >
+	    <span class="icon-dislike button-icon-dislike"></span>
+	    <span class="text-dislike">Non mi piace</span> <?php echo $this->item->vdislike; ?>
+	    </button>
+	    
+	    <button class="video_visto">
+	    <input type="hidden" value="2" class="" >
+		<span class="icon-visto button-icon-visto"></span>  
+	    <span class="text-visto">Segna come visto?</span> 
+	    </button>
+	    
+	    <button class="video_preferito">
+	    <input type="hidden" value="3" class="" >
+		<span class="icon-preferito button-icon-preferito"></span>  
+	    <span class="text-preferito">Aggiungi ai preferiti</span> 
+	    </button>
+	    </div>
+	     
+        
+         <div class="video_desc"> <?php echo $this->item->description ?></div> 
+         <input type="hidden" value="<?php echo $this->item->id; ?>" id="id_video">
     </div>
 <?php
 else:

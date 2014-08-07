@@ -6,11 +6,11 @@ jQuery(document).ready(function() {
 		console.log(scroll);
 			if(scroll>0)
 			{
-			jQuery('#headertop').css('box-shadow','0px 0px '+10+'px 0px');
+			jQuery('#headerbottom').css('box-shadow','0px 0px '+10+'px 0px');
 			}
 			else
 			{	
-			jQuery('#headertop').css('box-shadow','0px 0px 0px 0px');
+			jQuery('#headerbottom').css('box-shadow','0px 0px 0px 0px');
 			}
 			
 			if(scroll>70)

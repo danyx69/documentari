@@ -34,6 +34,7 @@ class DocumentaryViewVideo extends JViewLegacy {
         $this->state = $this->get('State');
         $this->item = $this->get('Data');
         $this->params = $app->getParams('com_documentary');
+        $this->option 		= JFactory::getApplication()->input->getCmd("option");
    		
         $catTit=JHTML::_("Documentary.getCategoryName",$this->item->catid);
         
@@ -112,7 +113,9 @@ class DocumentaryViewVideo extends JViewLegacy {
 		{
 			$this->document->setMetadata('robots', $this->params->get('robots'));
 		}
-      $this->document->addScript('media/com_documentary/js/site/video_like.js');  
+      $this->document->addScript('media/com_documentary/js/site/video_like.js');
+      $this->document->addStyleSheet( 'media/'.$this->option.'/css/site/videos.css');
+      $this->document->addScript('media/'.$this->option.'/js/site/videos.js');
 
 	}        
     

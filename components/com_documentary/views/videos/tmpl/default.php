@@ -59,18 +59,18 @@ defined('_JEXEC') or die;
      		 
      		 <div class="front">
      		 
-     		 <a class="video_title" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>" title="<?php echo ucfirst(strtolower($item->title)); ?>"><?php echo ucfirst(strtolower($item->title)); ?></a>
+     		 <a class="video_details_title" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>" title="<?php echo ucfirst(strtolower($item->title)); ?>"><?php echo ucfirst(strtolower($item->title)); ?></a>
 			 <a class="video_link"  style="background-image:url(<?php echo $item->image?>)" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>"  ></a>
      		 </div>
       		<div class="back">
 
-      		 <a class="video_description" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>">
-      		 <span class="video_title" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>"><?php echo ucfirst(strtolower($item->title)); ?></span>
+      		 <a class="video_details_description" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>">
+      		 <span class="video_details_title" href="<?php echo JRoute::_('index.php?option=com_documentary&view=video&id='.(int)$item->id)?>"><?php echo ucfirst(strtolower($item->title)); ?></span>
       		 <br>
       		 <span><strong>Descrizione: </strong></span><?php echo $item->description; ?></a>
-      		 <div class="video_data video_button">Pubblicato: <?php echo $date; ?></div>
+      		 <div class="video_details_data video_button">Pubblicato: <?php echo $date; ?></div>
       		 <div class="video_visualizzazioni video_button">Visualizzazioni: <?php echo $item->visualizzazioni; ?></div>
-      		 <div class="video_like video_button"><div class="img_like"></div><?php echo $item->like; ?> 700 <div class="img_dislike"></div> 170 <?php echo $item->dislike; ?></div>
+      		 <div class="video_details_like video_button"><div class="img_like"></div><?php echo $item->like; ?> 700 <div class="img_dislike"></div> 170 <?php echo $item->dislike; ?></div>
       		 <div class="video_rating video_button">Gradimento: <?php echo $gradimento; ?></div>
       		 </div>
    			 </div>	
